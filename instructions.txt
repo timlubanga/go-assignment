@@ -1,0 +1,24 @@
+Assignment description
+We have a small GO coding task for you, to complete before meeting,
+which we will then talk about during meeting: Task - Create an API to
+accept a link to a helm chart, search for container images. Download
+docker images from their respective repositories and return a response
+of the list of images, their size and no. of layers in each image. Hints
+for developers 
+
+
+Assignment requirements
+    1. Ability to fetch images from helm chart 
+    2. Pull images from respectives docker repos
+    3. Read image details such as their Size, no of layers return a json image
+    4. Include input validators to assert correct chart path and ensure the path is required, allowed method
+    5. Catch errors gracefully
+    6  Write tests to validate the API
+
+
+
+Pre-requsites
+    1. git clone git repository
+    2. Ensure docker is granted root permission to download image
+    3 Make sure docker engine is running: sudo systemctl status docker
+    4 Change docker socket permission to allow permission: sudo chmod 666 /var/run/docker.sock
